@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![The Template](https://github.com/digitalRM/FOYM-Template/assets/70782025/a7711b85-544e-4cd2-93cf-86ba294b9d02)
 
-## Getting Started
+Template Series - Name #
+---
+This is a base Next.JS build preloaded with Shadcn/UI and a file structure system used for FOYM templates.
 
-First, run the development server:
+![Website Image](https://github.com/digitalRM/FOYM-Template/assets/70782025/95559860-79e0-4033-b128-585cdd2465d1)
+
+Personal Note - Ruslan
+
+Getting Started
+---
+
+To get a local copy up and running, follow these steps:
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/en)
+- [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+- An IDE
+
+### Installation
+
+Clone the repository
+
+```bash
+git clone 
+```
+
+Install required packages
+
+```bash
+npm install
+```
+
+Customize the entire website across all the sections inside the `components/sections` folder
+```js
+
+
+```
+
+There are also important files to edit in the `components/ui` folder. They are all marked with 1 in the front. 
+```js
+
+```
+
+Delete Banner in `app/layout.js`
+
+```js
+// Delete this import below when you are ready to remove the banner
+import Banner from "@/components/sections/999 - banner";
+
+{/* This is the banner for the FOYM website. Feel free to delete this! */}
+<Banner />
+```
+Delete Banner from the `components/sections` folder
+```js
+999 - banner.jsx
+```
+
+Customize your metadata in `app/layout.js`
+```js
+// This is the metadata for the website. Change the values to match your website. Upload the openGraph.png to your public folder
+export const metadata = {
+  metadataBase: new URL(''),
+  title: " - An FOYM Template",
+  description: "",
+  openGraph: {
+    title: " - An FOYM Template",
+    description: "",
+    url: '',
+    siteName: ' - An FOYM Template',
+    // images: [
+    //   {
+    //     url: '/openGraph.png',
+    //     width: 1600,
+    //     height: 900,
+    //     alt: 'An image on the the website\s name "Template - FOYM" and star like characters in the background pointing at the name',
+    //   },
+    // ], 
+    locale: 'en_US',
+    type: 'website',
+  },
+}
+```
+
+Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contact 
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+If you are having trouble setting this up, please feel free to contact me via the [foym](https://www.foym.org) website. 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## License
 
-## Learn More
+This project is licensed under the MIT License - see the `LICENSE` file for details.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
