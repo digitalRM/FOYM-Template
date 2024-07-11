@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 // This is the metadata for the website. Change the values to match your website. Upload the openGraph.png to your public folder
 export const metadata = {
-  metadataBase: new URL(''),
+  metadataBase: new URL('https://www.foym.org/'),
   title: " - An FOYM Template",
   description: "",
   openGraph: {
