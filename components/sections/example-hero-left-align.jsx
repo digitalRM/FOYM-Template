@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import { Button } from '../ui/button'
 import Header from '../ui/1 - header'
 
@@ -21,7 +21,7 @@ export default function Hero() {
           </div>
           <div className='sm:w-[570px] mt-12 h-full relative sm:mx-auto'>
             <div className="ml-auto w-44 absolute lg:-rotate-6 translate-y-12">
-              <div className="relative" style={{ translateY: scale }} >
+              <div className="relative" >
                 <div className="aspect-[2/3] w-full rounded-xl rounded-l-none bg-indigo-800 object-cover shadow-lg overflow-hidden relative">
                   <div className=" absolute h-full w-9 bg-indigo-950 left-0 top-0" />
                 </div>
@@ -29,7 +29,7 @@ export default function Hero() {
               </div>
             </div>
             <div className="ml-auto w-44 absolute translate-x-48">
-              <div className="relative" style={{ translateY: scale }}>
+              <div className="relative">
                 <div className="aspect-[2/3] w-full rounded-xl rounded-l-none bg-red-800 object-cover shadow-lg overflow-hidden relative">
                   <div className=" absolute h-full w-9 bg-red-950 left-0 top-0" />
                 </div>
@@ -37,7 +37,7 @@ export default function Hero() {
               </div>
             </div>
             <div className="ml-auto w-44 absolute lg:rotate-6 -translate-y-12 translate-x-96">
-              <div className="relative" style={{ translateY: scale }}>
+              <div className="relative">
                 <div className="aspect-[2/3] w-full rounded-xl rounded-l-none bg-green-800 object-cover shadow-lg overflow-hidden relative">
                   <div className=" absolute h-full w-9 bg-green-950 left-0 top-0" />
                 </div>
